@@ -17,11 +17,19 @@ public class MethodsTest extends TestCase{
         return new TestSuite( MethodsTest.class );
     }
 
-    public void testGenerateToken(){
+  /*  public void testGenerateToken(){
       assertEquals("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4ifQ.StuYX978pQGnCeeaj2E1yBYwQvZIodyDTCJWXdsxBGI", Methods.generateToken("admin", "secret"));
     }
 
     public void testAccessData(){
       assertEquals("You are under protected data", Methods.accessData("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4ifQ.StuYX978pQGnCeeaj2E1yBYwQvZIodyDTCJWXdsxBGI"));
+    }*/
+
+    public void testGenerateTokenArnold(){
+        assertEquals("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4ifQ.D6AcZ1kVOJaa7pzynF3rd7qI3I7memlYR8glEsF9ryw", Methods.generateToken("admin", "secret"));
+    }
+
+    public void testAccessDataArnold(){
+        assertEquals("You are under protected data", Methods.accessData("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4ifQ.D6AcZ1kVOJaa7pzynF3rd7qI3I7memlYR8glEsF9ryw"));
     }
 }
